@@ -5,21 +5,21 @@
 class SshAutocomplete < Formula
   desc "SSH host autocompletion helper for bash, zsh, and PowerShell"
   homepage "https://github.com/ordinlabs/ssh-autocomplete"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.0/ssh-autocomplete_1.0.0_darwin_amd64.tar.gz"
-      sha256 "d8bc729b224d0ed0ecd1f691f7351bbf10f7e5bfed214557738494ec3d63ba66"
+      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.1/ssh-autocomplete_1.0.1_darwin_amd64.tar.gz"
+      sha256 "4217d19ff4681c58ab5f2fbd63ce62aeaa0127e9453ff854031a10171186ff98"
 
       define_method(:install) do
         bin.install "ssh-autocomplete"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.0/ssh-autocomplete_1.0.0_darwin_arm64.tar.gz"
-      sha256 "565a7c03e7b689775148bf2dc47e3225c56a5015346a0753d6f2b5bb821ad638"
+      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.1/ssh-autocomplete_1.0.1_darwin_arm64.tar.gz"
+      sha256 "cfb033128cbeb7c5f5338c849b9c7860d8fb93bbf89a132cbb5249944ad9a784"
 
       define_method(:install) do
         bin.install "ssh-autocomplete"
@@ -29,15 +29,15 @@ class SshAutocomplete < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.0/ssh-autocomplete_1.0.0_linux_amd64.tar.gz"
-      sha256 "6330ca9e51ab64b902c4f2c18363fe4b926ec3891141aef8e241900654870651"
+      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.1/ssh-autocomplete_1.0.1_linux_amd64.tar.gz"
+      sha256 "6f67a9532a73987dc86b765070132a6a420de6cbf53e72d3a7f5125fded3a0ba"
       define_method(:install) do
         bin.install "ssh-autocomplete"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.0/ssh-autocomplete_1.0.0_linux_arm64.tar.gz"
-      sha256 "a4f30c5e37f309fa42a1ce5dc55673f9e64d1407850dbc42f278e567624fa4e7"
+      url "https://github.com/ordinlabs/ssh-autocomplete/releases/download/v1.0.1/ssh-autocomplete_1.0.1_linux_arm64.tar.gz"
+      sha256 "358eebf8e0b08d2d8a02b9953c9112e06a9edbcf6813c26b22da1a8cbf734aa4"
       define_method(:install) do
         bin.install "ssh-autocomplete"
       end
