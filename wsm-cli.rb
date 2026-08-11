@@ -11,7 +11,7 @@ class WsmCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.6/wsm-cli_2.7.6_darwin_amd64.tar.gz"
-      sha256 "b1540f1e6118417fadb944e3159fc330bf86eb06d9647d252dd876f9f0d419b1"
+      sha256 "b0adf256449834561e4b46d2d7a3e870d10456cda26d5549516245249ebd80a9"
 
       define_method(:install) do
         bin.install "wsm-cli"
@@ -19,7 +19,7 @@ class WsmCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.6/wsm-cli_2.7.6_darwin_arm64.tar.gz"
-      sha256 "b9adaf752536bf4f9ed3d2c243a2419e9e2b2ae0ba13f1a6395acfb9b9732b72"
+      sha256 "3ad88d77bf2a36addfec6e9836d7f424ce1eb54cc81d757641fc34b93c1206eb"
 
       define_method(:install) do
         bin.install "wsm-cli"
@@ -30,14 +30,14 @@ class WsmCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.6/wsm-cli_2.7.6_linux_amd64.tar.gz"
-      sha256 "d87e70d04b8350975dae1f15654eac0e7651681f7eae8cebaf7683ef5c4dccdb"
+      sha256 "74980970541b9101e369f3d671bfc6cefe5aab081e1dc3355ad18a3733b77dd9"
       define_method(:install) do
         bin.install "wsm-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.6/wsm-cli_2.7.6_linux_arm64.tar.gz"
-      sha256 "03e617905f0a7b9a5d6d0cb49ab1f2a8af48cb8377cc1c7358f0633409311052"
+      sha256 "676da4bfa09e96fea9f9514f98860632bc63bf85c74a7c8c26cc39e6991b164d"
       define_method(:install) do
         bin.install "wsm-cli"
       end
