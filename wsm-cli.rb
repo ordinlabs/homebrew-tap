@@ -5,21 +5,21 @@
 class WsmCli < Formula
   desc "CLI for Ordin Labs Workspace Manager"
   homepage "https://github.com/ordinlabs/wsm-cli"
-  version "2.7.5-alpha.2"
+  version "2.7.5"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5-alpha.2/wsm-cli_2.7.5-alpha.2_darwin_amd64.tar.gz"
-      sha256 "8bcfd967e8bf05ab5e1334e41fa2395ed307cf2777d49bbfd166a2691b181f23"
+      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5/wsm-cli_2.7.5_darwin_amd64.tar.gz"
+      sha256 "407f9f5b9fd0fed2ff45482f740b508ed58b4892788efeef49efaf5b1723ab6f"
 
       define_method(:install) do
         bin.install "wsm-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5-alpha.2/wsm-cli_2.7.5-alpha.2_darwin_arm64.tar.gz"
-      sha256 "29002d1c3915028a2af6243c5bf49531ae6ee91f9312470116dfe9ce2ef7571e"
+      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5/wsm-cli_2.7.5_darwin_arm64.tar.gz"
+      sha256 "6fcbe86d93ffdabb82de60762a95e5751951308d8da309211fdae8477e24a6dc"
 
       define_method(:install) do
         bin.install "wsm-cli"
@@ -29,15 +29,15 @@ class WsmCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5-alpha.2/wsm-cli_2.7.5-alpha.2_linux_amd64.tar.gz"
-      sha256 "00934f46ca1b47c658e8195a6514167253e087e135672bebbcf617697ade8542"
+      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5/wsm-cli_2.7.5_linux_amd64.tar.gz"
+      sha256 "497406660b7ae180c45d5cca89cc48bf9e496ee7de886319eaee6cfd8e33a8e7"
       define_method(:install) do
         bin.install "wsm-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5-alpha.2/wsm-cli_2.7.5-alpha.2_linux_arm64.tar.gz"
-      sha256 "6072aa8cbd5919ff93285d10ecbdb63f45fe02e6f32c8f78f588424582a87fb6"
+      url "https://github.com/ordinlabs/wsm-cli/releases/download/v2.7.5/wsm-cli_2.7.5_linux_arm64.tar.gz"
+      sha256 "0b3803bd9e0d96ac903f7db2ffae5e0240ae882ec35f88e5d9163b9ec50d28d0"
       define_method(:install) do
         bin.install "wsm-cli"
       end
